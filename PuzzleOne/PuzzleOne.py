@@ -1,4 +1,6 @@
-file = open('input.txt', 'r')
+import os 
+dir_path = os.path.dirname(os.path.realpath(__file__))
+file = open(dir_path + '/input.txt', 'r')
 input = file.readlines()
 input = [int(i) for i in input]
 changes = []
